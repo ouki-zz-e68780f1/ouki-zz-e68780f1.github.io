@@ -1,0 +1,1371 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黑料网-网络争议事件_舆情观察_网民热议追踪</title>
+  <meta name="description" content="黑料网聚焦网络争议事件与舆情观察，提供网民热议追踪、事件时间线、多方观点对照与背景梳理，适合关注网络舆论与公共讨论的读者查阅。">
+  <meta name="keywords" content="网络争议事件,舆情观察,网民热议,事件时间线,观点对照">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a1e2c'/%3E%3Cpath d='M9 10h14M9 16h10M9 22h14' stroke='%23f05a3a' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --bg: #f6f4f1;
+      --panel: #ffffff;
+      --ink: #1d2029;
+      --ink-soft: #4a4f5c;
+      --ink-faint: #747a88;
+      --line: #e2ded8;
+      --line-strong: #c9c3ba;
+      --brand: #b53a22;
+      --brand-soft: #f9ece7;
+      --brand-deep: #8a2a18;
+      --accent: #2c5f6e;
+      --accent-soft: #eaf1f2;
+      --gold: #a97b2f;
+      --gold-soft: #f7f0e2;
+      --radius: 10px;
+      --radius-sm: 6px;
+      --shadow: 0 1px 2px rgba(29,32,41,.05), 0 4px 14px rgba(29,32,41,.04);
+      --shadow-lg: 0 2px 6px rgba(29,32,41,.06), 0 12px 32px rgba(29,32,41,.07);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      --announce-h: 38px;
+      --header-h: 64px;
+      --sticky-offset: calc(var(--announce-h) + var(--header-h) + 12px);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+    img, svg { display: block; }
+    ::selection { background: var(--brand); color: #fff; }
+
+    /* ===== 吸顶公告条 ===== */
+    .announce {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      height: var(--announce-h);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(90deg, #2a1e1a, #3d2a22 45%, #2a1e1a);
+      color: #f3e6dc;
+      font-size: 13px;
+      letter-spacing: .2px;
+      padding: 0 16px;
+      border-bottom: 1px solid #4a332a;
+    }
+    .announce .dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #f07a4a;
+      box-shadow: 0 0 0 3px rgba(240,122,74,.22);
+      flex-shrink: 0;
+    }
+    .announce b { color: #ffb08a; font-weight: 600; }
+    .announce a {
+      color: #ffcdb4;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      white-space: nowrap;
+    }
+
+    /* ===== 吸顶页头 ===== */
+    .site-header {
+      position: sticky;
+      top: var(--announce-h);
+      z-index: 55;
+      height: var(--header-h);
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 0 rgba(29,32,41,.03);
+    }
+    .header-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding: 0 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .brand-mark {
+      width: 36px; height: 36px;
+      border-radius: 9px;
+      background: var(--ink);
+      display: grid;
+      place-items: center;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+    }
+    .brand-mark svg { width: 22px; height: 22px; }
+    .brand-name {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: .5px;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .brand-name em {
+      font-style: normal;
+      color: var(--brand);
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 8px;
+    }
+    .header-nav a {
+      font-size: 14px;
+      color: var(--ink-soft);
+      padding: 6px 11px;
+      border-radius: 7px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .header-nav a:hover { background: var(--brand-soft); color: var(--brand-deep); }
+    .header-search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f3f1ee;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 4px 0 12px;
+      height: 36px;
+      width: 228px;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .header-search:focus-within {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(181,58,34,.12);
+      background: #fff;
+    }
+    .header-search svg { width: 15px; height: 15px; color: var(--ink-faint); flex-shrink: 0; }
+    .header-search input {
+      border: none; background: transparent; outline: none;
+      font-size: 13.5px; width: 100%; color: var(--ink);
+    }
+    .header-search input::placeholder { color: #9a9fa9; }
+    .header-search button {
+      border: none;
+      background: var(--ink);
+      color: #fff;
+      font-size: 12.5px;
+      padding: 6px 11px;
+      border-radius: 6px;
+      letter-spacing: .5px;
+      transition: background .15s;
+      flex-shrink: 0;
+    }
+    .header-search button:hover { background: var(--brand); }
+
+    /* ===== 首屏 ===== */
+    .hero {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 30px 24px 10px;
+    }
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      background:
+        radial-gradient(1200px 320px at 88% -10%, rgba(181,58,34,.16), transparent 60%),
+        radial-gradient(900px 380px at -5% 110%, rgba(44,95,110,.13), transparent 60%),
+        linear-gradient(135deg, #1c1f2b 0%, #252a38 55%, #1a1e29 100%);
+      color: #f2efe9;
+      padding: 40px 44px 36px;
+      display: grid;
+      grid-template-columns: minmax(0,1.35fr) minmax(0,1fr);
+      gap: 36px;
+      align-items: center;
+      box-shadow: var(--shadow-lg);
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      right: -60px; top: -60px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      border: 1px solid rgba(240,122,74,.18);
+      box-shadow: 0 0 0 40px rgba(240,122,74,.04), 0 0 0 80px rgba(240,122,74,.025);
+      pointer-events: none;
+    }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #e9a98c;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .hero-kicker::before {
+      content: "";
+      width: 22px; height: 1px;
+      background: #e9a98c;
+    }
+    .hero h1 {
+      font-size: 40px;
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: #f07a4a; }
+    .hero-desc {
+      font-size: 14.5px;
+      color: #c3c0b8;
+      line-height: 1.75;
+      max-width: 480px;
+      margin-bottom: 24px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      transition: background .15s, transform .1s, border-color .15s;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary { background: #f07a4a; color: #211511; }
+    .btn-primary:hover { background: #ff8b5c; }
+    .btn-ghost { border-color: rgba(255,255,255,.22); color: #e8e4dc; }
+    .btn-ghost:hover { border-color: rgba(255,255,255,.5); background: rgba(255,255,255,.05); }
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+    }
+    .hero-visual svg { width: 100%; max-width: 340px; height: auto; }
+
+    /* ===== 三栏主结构 ===== */
+    .layout {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 26px 24px 48px;
+      display: grid;
+      grid-template-columns: 184px minmax(0,1fr) 252px;
+      gap: 26px;
+      align-items: start;
+    }
+    .col-left { position: sticky; top: var(--sticky-offset); }
+    .col-right { position: sticky; top: var(--sticky-offset); }
+
+    /* ===== 左栏 ===== */
+    .side-block {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 14px 12px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+    .side-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--ink-faint);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .side-title::before {
+      content: "";
+      width: 3px; height: 12px;
+      border-radius: 2px;
+      background: var(--brand);
+    }
+    .channel-list { list-style: none; display: flex; flex-direction: column; gap: 1px; }
+    .channel-list a {
+      display: block;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      padding: 7px 9px;
+      border-radius: 6px;
+      transition: background .13s, color .13s;
+      line-height: 1.4;
+    }
+    .channel-list a:hover { background: var(--brand-soft); color: var(--brand-deep); }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag-cloud a {
+      font-size: 12px;
+      padding: 4px 9px;
+      border-radius: 20px;
+      background: #f3f1ee;
+      color: var(--ink-soft);
+      border: 1px solid transparent;
+      transition: background .13s, color .13s, border-color .13s;
+      line-height: 1.4;
+    }
+    .tag-cloud a:hover { background: var(--brand-soft); color: var(--brand-deep); border-color: #f0cfc3; }
+
+    /* ===== 中栏通用 ===== */
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px 26px 26px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+      scroll-margin-top: var(--sticky-offset);
+    }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-head h2 {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: .3px;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .section-head h2::before {
+      content: "";
+      width: 4px; height: 17px;
+      border-radius: 2px;
+      background: linear-gradient(180deg, var(--brand), #e08a6c);
+    }
+    .section-head .more-link {
+      font-size: 12.5px;
+      color: var(--ink-faint);
+      white-space: nowrap;
+      transition: color .13s;
+    }
+    .section-head .more-link:hover { color: var(--brand); }
+    .section-sub {
+      font-size: 13px;
+      color: var(--ink-faint);
+      margin: -6px 0 16px;
+      line-height: 1.6;
+    }
+
+    /* 内容简介 */
+    .intro-text p {
+      font-size: 14.5px;
+      color: var(--ink-soft);
+      line-height: 1.85;
+      margin-bottom: 12px;
+    }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: var(--ink); font-weight: 600; }
+    .intro-text .hl { color: var(--brand-deep); font-weight: 600; }
+
+    /* 热门卡片 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+    }
+    .content-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 15px 16px 14px;
+      background: #fdfcfa;
+      transition: border-color .15s, box-shadow .15s, transform .15s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .content-card:hover {
+      border-color: #d9b7a8;
+      box-shadow: 0 6px 18px rgba(29,32,41,.07);
+      transform: translateY(-1px);
+    }
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+    .card-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1.5;
+    }
+    .badge-hot { background: #fbe3da; color: #9c3018; }
+    .badge-deep { background: var(--accent-soft); color: var(--accent); }
+    .badge-time { background: var(--gold-soft); color: #7d5a1c; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .card-tags span {
+      font-size: 11.5px;
+      color: var(--ink-faint);
+      background: #f3f1ee;
+      padding: 1px 7px;
+      border-radius: 4px;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.62;
+    }
+    .card-meta {
+      display: flex;
+      gap: 14px;
+      font-size: 11.5px;
+      color: var(--ink-faint);
+      padding-top: 2px;
+      border-top: 1px dashed var(--line);
+      margin-top: 2px;
+    }
+    .card-meta b { color: var(--brand-deep); font-weight: 600; }
+
+    /* 最新更新列表 */
+    .update-list { list-style: none; display: flex; flex-direction: column; }
+    .update-list li {
+      display: flex;
+      gap: 14px;
+      padding: 11px 0;
+      border-bottom: 1px dashed var(--line);
+      align-items: flex-start;
+    }
+    .update-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .update-list .u-name {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink);
+      flex-shrink: 0;
+      width: 172px;
+      line-height: 1.55;
+    }
+    .update-list .u-sum {
+      font-size: 13px;
+      color: var(--ink-faint);
+      line-height: 1.6;
+    }
+
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 10px;
+    }
+    .cat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 13px 12px;
+      border-radius: var(--radius-sm);
+      background: #f8f6f2;
+      border: 1px solid var(--line);
+      transition: background .15s, border-color .15s;
+    }
+    .cat-item:hover { background: var(--brand-soft); border-color: #e6c7bb; }
+    .cat-item .c-name { font-size: 13.5px; font-weight: 700; color: var(--ink); }
+    .cat-item .c-count { font-size: 11.5px; color: var(--ink-faint); }
+
+    /* 深度解析 */
+    .deep-body h3 {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 20px 0 9px;
+      padding-left: 11px;
+      border-left: 3px solid var(--brand);
+      line-height: 1.5;
+    }
+    .deep-body h3:first-child { margin-top: 0; }
+    .deep-body p {
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.85;
+      margin-bottom: 10px;
+      max-width: 100%;
+    }
+    .deep-body ul {
+      margin: 6px 0 12px 0;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .deep-body li {
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+    .deep-body li strong { color: var(--ink); }
+
+    /* 体验指南步骤 */
+    .steps { display: flex; flex-direction: column; gap: 0; counter-reset: step; }
+    .step-item {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .step-item:last-child { border-bottom: none; }
+    .step-num {
+      counter-increment: step;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-num::before { content: counter(step); }
+    .step-text .s-title { font-size: 13.5px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+    .step-text .s-desc { font-size: 13px; color: var(--ink-faint); line-height: 1.65; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    details.faq-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: #fdfcfa;
+      overflow: hidden;
+    }
+    details.faq-item[open] { border-color: #d9b7a8; background: #fff; }
+    details.faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 12px 15px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: background .13s;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary:hover { background: #f8f4f1; }
+    details.faq-item summary::after {
+      content: "+";
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--brand);
+      line-height: 1;
+      transition: transform .2s;
+      flex-shrink: 0;
+    }
+    details.faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-answer {
+      padding: 0 15px 13px;
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      border-top: 1px dashed var(--line);
+      margin-top: 0;
+      padding-top: 10px;
+    }
+
+    /* 评论 */
+    .comment-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+    .comment-item {
+      background: #faf8f5;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+    }
+    .comment-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .avatar {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .avatar.v2 { background: var(--brand); }
+    .avatar.v3 { background: var(--gold); }
+    .avatar.v4 { background: #5c6b4a; }
+    .avatar.v5 { background: #6a4f7a; }
+    .comment-name { font-size: 12.5px; font-weight: 700; color: var(--ink); }
+    .comment-text { font-size: 12.5px; color: var(--ink-soft); line-height: 1.65; }
+
+    /* 资讯 */
+    .news-list { display: flex; flex-direction: column; }
+    .news-item {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--line);
+      align-items: flex-start;
+    }
+    .news-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .news-date {
+      font-size: 11.5px;
+      color: var(--ink-faint);
+      background: #f3f1ee;
+      padding: 2px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-variant-numeric: tabular-nums;
+    }
+    .news-content .n-title { font-size: 13.5px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+    .news-content .n-sum { font-size: 12.5px; color: var(--ink-faint); line-height: 1.6; }
+
+    /* 相关推荐 */
+    .rec-list { list-style: none; display: flex; flex-direction: column; }
+    .rec-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .rec-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .rec-idx {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--brand);
+      width: 20px;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .rec-text { font-size: 13px; color: var(--ink-soft); line-height: 1.55; }
+    .rec-text b { color: var(--ink); font-weight: 600; }
+
+    /* 右栏 */
+    .toc-list { list-style: none; display: flex; flex-direction: column; gap: 1px; }
+    .toc-list a {
+      display: block;
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      padding: 5px 8px;
+      border-radius: 5px;
+      line-height: 1.5;
+      border-left: 2px solid transparent;
+      transition: background .12s, border-color .12s, color .12s;
+    }
+    .toc-list a:hover { background: var(--brand-soft); color: var(--brand-deep); border-left-color: var(--brand); }
+    .hot-mini-list { list-style: none; display: flex; flex-direction: column; }
+    .hot-mini-list li {
+      display: flex;
+      gap: 9px;
+      padding: 7px 0;
+      border-bottom: 1px dashed var(--line);
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      align-items: flex-start;
+    }
+    .hot-mini-list li:last-child { border-bottom: none; }
+    .hot-mini-list .rank {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--ink-faint);
+      width: 16px;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+      margin-top: 1px;
+    }
+    .hot-mini-list .rank.top { color: var(--brand); }
+    .hot-mini-list a:hover { color: var(--brand-deep); }
+
+    /* 页尾 */
+    .site-footer {
+      background: #1c1f2b;
+      color: #a9acb6;
+      padding: 36px 0 24px;
+      margin-top: 8px;
+    }
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: minmax(0,1.4fr) repeat(3, minmax(0,1fr));
+      gap: 32px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #2c303d;
+    }
+    .footer-brand .f-logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 10px;
+    }
+    .footer-brand .f-mark {
+      width: 30px; height: 30px;
+      border-radius: 7px;
+      background: #f07a4a;
+      display: grid;
+      place-items: center;
+    }
+    .footer-brand .f-mark svg { width: 18px; height: 18px; }
+    .footer-brand .f-name { font-size: 17px; font-weight: 800; color: #f0ede7; letter-spacing: .4px; }
+    .footer-brand .f-desc { font-size: 12.5px; line-height: 1.7; color: #868b97; max-width: 320px; }
+    .footer-col h4 { font-size: 12px; letter-spacing: 1.5px; color: #d5d2ca; margin-bottom: 11px; font-weight: 700; }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: #868b97;
+      padding: 3px 0;
+      transition: color .13s;
+    }
+    .footer-col a:hover { color: #f0a080; }
+    .footer-bottom {
+      padding-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11.5px;
+      color: #6e7480;
+      line-height: 1.6;
+    }
+    .footer-bottom .note { color: #7d828e; }
+
+    /* 无结果提示 */
+    .no-result {
+      display: none;
+      padding: 22px 16px;
+      text-align: center;
+      font-size: 13.5px;
+      color: var(--ink-faint);
+      background: #f8f6f2;
+      border: 1px dashed var(--line-strong);
+      border-radius: var(--radius-sm);
+      margin-top: 10px;
+    }
+
+    /* 焦点可见 */
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
+      border-radius: 3px;
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 1120px) {
+      .layout { grid-template-columns: 170px minmax(0,1fr); }
+      .col-right { display: none; }
+      .hero-card { grid-template-columns: 1fr; gap: 20px; padding: 32px 30px; }
+      .hero-visual { display: none; }
+      .hero h1 { font-size: 34px; }
+    }
+    @media (max-width: 860px) {
+      .header-nav { display: none; }
+      .header-search { width: 180px; }
+      .layout { grid-template-columns: 1fr; gap: 18px; padding: 18px 16px 36px; }
+      .col-left { position: static; }
+      .col-right { display: block; position: static; }
+      .side-block { margin-bottom: 14px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-list { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 22px; }
+      .hero-card { padding: 26px 22px; }
+      .hero h1 { font-size: 30px; }
+      .section { padding: 18px 18px 20px; }
+      .update-list .u-name { width: 132px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+    }
+    @media (max-width: 560px) {
+      .announce { font-size: 12px; gap: 6px; padding: 0 10px; }
+      .announce .announce-long { display: none; }
+      .header-inner { padding: 0 14px; gap: 12px; }
+      .brand-name { font-size: 18px; }
+      .header-search { width: 140px; }
+      .header-search button { padding: 6px 8px; font-size: 12px; }
+      .hero { padding: 18px 14px 6px; }
+      .hero h1 { font-size: 26px; }
+      .hero-desc { font-size: 13.5px; }
+      .layout { padding: 14px 12px 30px; }
+      .section { padding: 16px 14px 18px; border-radius: 8px; }
+      .section-head h2 { font-size: 16.5px; }
+      .cat-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .update-list li { flex-direction: column; gap: 4px; }
+      .update-list .u-name { width: auto; }
+      .footer-top { grid-template-columns: 1fr; gap: 18px; }
+      .news-item { flex-direction: column; gap: 5px; }
+      .hero-actions .btn { padding: 9px 15px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="announce" role="status">
+    <span class="dot" aria-hidden="true"></span>
+    <span>本周上新 · <b>舆情观察专题</b> 已更新41条事件追踪</span>
+    <span class="announce-long">，<a href="/#deep-dive">查看深度解析</a></span>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/#top" aria-label="黑料网首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h9M5 17h14" stroke="#f07a4a" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="19" cy="12" r="2.4" fill="#f07a4a"/>
+          </svg>
+        </span>
+        <span class="brand-name">黑料网</span>
+      </a>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#hot-picks">热议事件</a>
+        <a href="/#latest">最新动态</a>
+        <a href="/#categories">分类索引</a>
+        <a href="/#deep-dive">深度解析</a>
+        <a href="/#faq">常见问答</a>
+      </nav>
+      <form class="header-search" id="searchForm" role="search" aria-label="站内内容搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+        </svg>
+        <input type="search" id="searchInput" placeholder="搜索事件 / 类型 / 标签" aria-label="搜索事件或类型">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="hero-card">
+      <div>
+        <div class="hero-kicker">舆情观察 · 事件追踪</div>
+        <h1>黑料网</h1>
+        <p class="hero-desc">聚焦网络争议事件与公共讨论，提供事件时间线、多方观点对照、背景溯源与网民热议追踪。适合关注舆情走向、需要快速厘清事件脉络的读者查阅。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#hot-picks">查看热议事件</a>
+          <a class="btn btn-ghost" href="/#deep-dive">阅读深度解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 340 220" fill="none">
+          <rect x="14" y="30" width="250" height="150" rx="12" fill="#2b3040" stroke="#3d4356" stroke-width="1.2"/>
+          <rect x="30" y="48" width="120" height="9" rx="4.5" fill="#f07a4a"/>
+          <rect x="30" y="68" width="200" height="7" rx="3.5" fill="#4a5165"/>
+          <rect x="30" y="84" width="172" height="7" rx="3.5" fill="#3d4356"/>
+          <rect x="30" y="100" width="188" height="7" rx="3.5" fill="#3d4356"/>
+          <rect x="30" y="122" width="90" height="26" rx="6" fill="#3a3f50"/>
+          <rect x="130" y="122" width="90" height="26" rx="6" fill="#3a3f50"/>
+          <circle cx="284" cy="74" r="38" fill="none" stroke="#f07a4a" stroke-width="1.4" opacity=".65"/>
+          <circle cx="284" cy="74" r="25" fill="none" stroke="#f07a4a" stroke-width="1.4" opacity=".4"/>
+          <circle cx="284" cy="74" r="12" fill="#f07a4a" opacity=".9"/>
+          <path d="M266 74h36M284 56v36" stroke="#1c1f2b" stroke-width="1.6"/>
+          <rect x="216" y="128" width="104" height="52" rx="9" fill="#252a38" stroke="#3d4356" stroke-width="1.2"/>
+          <rect x="228" y="142" width="56" height="6" rx="3" fill="#f07a4a" opacity=".8"/>
+          <rect x="228" y="156" width="76" height="6" rx="3" fill="#4a5165"/>
+          <rect x="228" y="168" width="44" height="6" rx="3" fill="#3d4356"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主结构 -->
+  <div class="layout" id="main-layout">
+
+    <!-- 左栏：频道 + 标签 -->
+    <aside class="col-left" aria-label="频道与标签导航">
+      <div class="side-block">
+        <div class="side-title">频道索引</div>
+        <ul class="channel-list">
+          <li><a href="/#hot-picks">热议事件榜</a></li>
+          <li><a href="/#latest">最新动态追踪</a></li>
+          <li><a href="/#categories">分类速查</a></li>
+          <li><a href="/#deep-dive">深度解析</a></li>
+          <li><a href="/#guide">查阅指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">舆情资讯</a></li>
+          <li><a href="/#recommend">延伸阅读</a></li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门标签</div>
+        <div class="tag-cloud">
+          <a href="/#categories">品牌争议</a>
+          <a href="/#categories">平台规则</a>
+          <a href="/#categories">消费维权</a>
+          <a href="/#categories">职场讨论</a>
+          <a href="/#categories">内容生态</a>
+          <a href="/#categories">公共事件</a>
+          <a href="/#categories">观点对照</a>
+          <a href="/#categories">时间线梳理</a>
+        </div>
+      </div>
+      <div class="side-block">
+        <div class="side-title">更新节奏</div>
+        <p style="font-size:12.5px;color:var(--ink-faint);line-height:1.7;">热议事件每日汇总，深度解析每周二、五更新。重大舆情事件按进展滚动补充时间线节点。</p>
+      </div>
+    </aside>
+
+    <!-- 中栏 -->
+    <main class="col-center">
+
+      <!-- 1. 内容简介 -->
+      <section class="section" id="intro">
+        <div class="section-head">
+          <h2>关于黑料网的内容定位</h2>
+        </div>
+        <div class="intro-text">
+          <p><strong>黑料网</strong>是一个围绕网络争议事件与公共讨论展开的内容观察页面，核心工作是梳理事件脉络、对照多方说法、追踪舆情走向。这里不提供未经核实的断言，而是把争议事件的时间线、关键节点、各方回应与网民讨论集中呈现，帮助读者在信息密集的环境里快速看清一件事的来龙去脉。</p>
+          <p>页面内容覆盖<strong>品牌争议、平台规则、消费维权、职场讨论、内容生态</strong>等常见讨论方向。对于热点事件，我们以“事件时间线 + 观点对照 + 背景补充”的方式组织信息；对于持续发酵的话题，则通过最新动态列表保持更新。读者可以先看<strong>热议事件榜</strong>了解当前讨论焦点，再进入深度解析区阅读详细梳理。</p>
+          <p>如果你关心的是<strong>某类争议事件一般如何发展</strong>，分类索引提供了按领域检索的入口；如果你更想了解<strong>不同立场的人怎么看</strong>，观点对照面板与读者评论区会呈现差异化的声音。所有内容以示例数据展示页面结构，不构成对任何真实主体的事实认定。我们鼓励读者在阅读时保持多方求证的习惯，把时间线和原始回应作为判断的基础。</p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="section" id="hot-picks">
+        <div class="section-head">
+          <h2>热议事件与内容推荐</h2>
+          <a class="more-link" href="/#latest">查看全部更新 →</a>
+        </div>
+        <p class="section-sub">以下条目按近期讨论热度与更新频率整理，涵盖品牌争议、平台规则与消费维权等方向。</p>
+        <div class="card-grid" id="hotCardGrid">
+          <article class="content-card">
+            <div class="card-top">
+              <div class="card-title">某饮品品牌配料表争议事件时间线</div>
+              <span class="badge badge-hot">热议</span>
+            </div>
+            <div class="card-tags"><span>品牌争议</span><span>消费维权</span><span>时间线</span></div>
+            <p class="card-desc">从消费者质疑到品牌回应，梳理配料标注争议的七个关键节点与双方说法差异。</p>
+            <div class="card-meta"><span>热度 <b>9.2</b></span><span>更新 3 小时前</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <div class="card-title">短视频平台搬运规则调整的各方反应</div>
+              <span class="badge badge-deep">深度</span>
+            </div>
+            <div class="card-tags"><span>平台规则</span><span>内容生态</span><span>观点对照</span></div>
+            <p class="card-desc">新规发布后创作者、MCN机构与普通用户的不同立场，附规则要点拆解。</p>
+            <div class="card-meta"><span>热度 <b>8.7</b></span><span>更新 6 小时前</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <div class="card-title">职场加班争议中的证据链与沟通记录</div>
+              <span class="badge badge-time">追踪</span>
+            </div>
+            <div class="card-tags"><span>职场讨论</span><span>公共事件</span><span>证据梳理</span></div>
+            <p class="card-desc">双方各执一词时，哪些记录成为关键？整理常见争议中的证据类型与效力。</p>
+            <div class="card-meta"><span>热度 <b>8.1</b></span><span>更新 12 小时前</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <div class="card-title">社区团购退款纠纷的常见处理路径</div>
+              <span class="badge badge-deep">实用</span>
+            </div>
+            <div class="card-tags"><span>消费维权</span><span>处理流程</span><span>平台规则</span></div>
+            <p class="card-desc">从平台投诉到外部渠道，不同处理方式的适用场景与时间成本对照。</p>
+            <div class="card-meta"><span>热度 <b>7.6</b></span><span>更新 1 天前</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <div class="card-title">内容创作者署名争议的背景与讨论</div>
+              <span class="badge badge-hot">热议</span>
+            </div>
+            <div class="card-tags"><span>内容生态</span><span>署名规范</span><span>观点对照</span></div>
+            <p class="card-desc">围绕二次创作与原创署名的分歧，整理行业惯例与平台规则的交叉点。</p>
+            <div class="card-meta"><span>热度 <b>8.9</b></span><span>更新 1 天前</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-top">
+              <div class="card-title">线下门店服务争议的舆情演变模式</div>
+              <span class="badge badge-deep">观察</span>
+            </div>
+            <div class="card-tags"><span>公共事件</span><span>舆情演变</span><span>服务争议</span></div>
+            <p class="card-desc">从单条吐槽到集中讨论，服务类争议常见的三个阶段与转折点识别。</p>
+            <div class="card-meta"><span>热度 <b>7.4</b></span><span>更新 2 天前</span></div>
+          </article>
+        </div>
+        <div class="no-result" id="noResult">没有找到匹配的内容，请尝试其他关键词。</div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section" id="latest">
+        <div class="section-head">
+          <h2>最新动态追踪</h2>
+        </div>
+        <ul class="update-list">
+          <li><span class="u-name">饮品配料争议</span><span class="u-sum">品牌方发布第二份说明，补充第三方检测报告摘要，消费者代表提出新的比对样本。</span></li>
+          <li><span class="u-name">搬运规则调整</span><span class="u-sum">平台更新创作者协议条款，明确二次剪辑的授权边界，首批受影响账号完成申诉。</span></li>
+          <li><span class="u-name">加班争议追踪</span><span class="u-sum">当事人公布部分沟通记录，劳动监察部门回应已介入了解情况，讨论热度持续。</span></li>
+          <li><span class="u-name">团购退款纠纷</span><span class="u-sum">多地消费者反馈处理时效差异，平台客服公布分区域处理排期表。</span></li>
+          <li><span class="u-name">署名争议讨论</span><span class="u-sum">行业组织发布署名规范讨论稿，创作者社群就适用范围展开辩论。</span></li>
+          <li><span class="u-name">门店服务舆情</span><span class="u-sum">涉事门店公布整改措施，区域负责人回应培训流程调整，舆情热度回落。</span></li>
+          <li><span class="u-name">直播带货售后</span><span class="u-sum">消费者集中反馈退换货流程问题，平台上线专项处理通道并公示时效承诺。</span></li>
+          <li><span class="u-name">测评内容边界</span><span class="u-sum">围绕测评机构与品牌方的关系披露，多位创作者公开合作声明模板。</span></li>
+          <li><span class="u-name">会员协议变更</span><span class="u-sum">某内容平台调整自动续费提示方式，消费者权益组织提出改进建议。</span></li>
+          <li><span class="u-name">社区规则公示</span><span class="u-sum">大型社区公布新版讨论规范，重点明确争议话题的举证与申诉流程。</span></li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="categories">
+        <div class="section-head">
+          <h2>争议事件分类索引</h2>
+        </div>
+        <p class="section-sub">按领域查找相关事件梳理与观点对照，点击进入对应分类的汇总内容。</p>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">品牌争议</span><span class="c-count">38 条梳理</span></a>
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">平台规则</span><span class="c-count">27 条梳理</span></a>
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">消费维权</span><span class="c-count">45 条梳理</span></a>
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">职场讨论</span><span class="c-count">19 条梳理</span></a>
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">内容生态</span><span class="c-count">31 条梳理</span></a>
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">公共事件</span><span class="c-count">24 条梳理</span></a>
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">观点对照</span><span class="c-count">16 组对照</span></a>
+          <a class="cat-item" href="/#hot-picks"><span class="c-name">时间线梳理</span><span class="c-count">52 条时间线</span></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="section" id="deep-dive">
+        <div class="section-head">
+          <h2>深度解析：如何看待网络争议事件</h2>
+        </div>
+        <div class="deep-body">
+          <h3>争议事件从哪里开始看</h3>
+          <p>面对一条正在发酵的网络争议，先别急着下结论。更有效的做法是找到事件的<strong>起点信息</strong>——最早发布的原始内容、时间戳和发布者身份。很多讨论之所以越滚越大，是因为后续转述中加入了情绪化表达，而原始信息本身可能只描述了局部情况。黑料网在整理事件时，会把“原始发布”“关键回应”“第三方介入”分开标注，方便读者判断每一层信息的来源。</p>
+          <p>起点信息确认后，下一步是看<strong>时间线是否完整</strong>。一个常见误区是只看最新进展，忽略中间环节。比如消费维权类争议，从消费者反馈到品牌回应之间往往有多次沟通，这些沟通记录可能改变对事件性质的判断。时间线的作用不是替读者下结论，而是把容易被忽略的节点补回来。</p>
+          <h3>观点对照为什么重要</h3>
+          <p>同一件事，不同立场的人看到的重点可能完全不同。品牌方关注合规流程，消费者关注实际体验，平台方关注规则适用，旁观者关注情绪表达。黑料网的观点对照面板把各方说法并排呈现，不是为了“各打五十大板”，而是让读者看清分歧究竟在哪一层。</p>
+          <ul>
+            <li><strong>事实层分歧：</strong>对发生了什么、时间顺序如何，各方说法是否一致。</li>
+            <li><strong>规则层分歧：</strong>适用哪条规则、规则本身是否清晰，往往成为争论焦点。</li>
+            <li><strong>价值层分歧：</strong>即使事实清楚，对“是否合理”的判断仍可能不同。</li>
+          </ul>
+          <p>把三层分开看，很多看似混乱的争论会立刻清晰起来。读者也能更快识别哪些讨论是在争事实，哪些是在争规则解释，哪些只是情绪表达。</p>
+          <h3>舆情热度与事件性质的区分</h3>
+          <p>热度高不等于问题严重，讨论少也不等于事情小。黑料网在呈现热议事件榜时，会同时标注<strong>讨论热度与信息完整度</strong>两个维度。有些事件热度很高但关键信息仍然缺失，适合保持关注；有些事件讨论量不大，但时间线和证据链已经比较完整，适合作为理解同类问题的参考样本。</p>
+          <p>对于持续追踪的话题，我们建议读者关注“<strong>是否有新的事实信息进入</strong>”，而不是只看评论量的涨跌。新信息可能是一份说明、一次回应、一个第三方结论，也可能只是更多人的相似经历。区分信息增量与情绪增量，是阅读争议事件时很实用的习惯。</p>
+          <h3>如何判断一条争议信息的可信度</h3>
+          <p>先看信息是否有<strong>可核对的原始出处</strong>，再看转述过程中是否出现关键细节的丢失或变形。截图、录屏、聊天记录都可以作为线索，但单独一条线索通常不足以支撑完整判断。黑料网在梳理时会标注信息来源类型，并提示哪些环节仍待补充。读者可以把“待核实”当作正常状态，而不是急于寻找一个非黑即白的答案。</p>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section" id="guide">
+        <div class="section-head">
+          <h2>查阅指南：快速定位你关心的事件</h2>
+        </div>
+        <div class="steps">
+          <div class="step-item">
+            <div class="step-num"></div>
+            <div class="step-text">
+              <div class="s-title">从热议事件榜开始</div>
+              <div class="s-desc">首屏下方的卡片区按讨论热度和更新频率排列，每张卡片标注了事件方向与关键标签，适合快速判断是否与你的关注点相关。</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num"></div>
+            <div class="step-text">
+              <div class="s-title">用分类索引缩小范围</div>
+              <div class="s-desc">如果你关心某一类争议（如消费维权或平台规则），分类索引按领域归集了相关梳理，比逐条翻看更高效。</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num"></div>
+            <div class="step-text">
+              <div class="s-title">阅读深度解析建立框架</div>
+              <div class="s-desc">深度解析区不针对单一事件，而是讲清楚看争议事件的方法：时间线怎么读、观点对照怎么看、可信度怎么判断。先建立框架，再看具体事件会更清晰。</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num"></div>
+            <div class="step-text">
+              <div class="s-title">用站内搜索找具体条目</div>
+              <div class="s-desc">页头搜索框支持按事件名称、类型标签查找当前页面上的内容。输入关键词后，热门推荐区会实时筛选；没有匹配结果时会给出提示。</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-num"></div>
+            <div class="step-text">
+              <div class="s-title">移动端阅读与侧栏位置</div>
+              <div class="s-desc">手机端左右侧栏会合并到主内容之后，频道导航变为横向入口。正文无需脚本即可完整阅读，搜索与筛选为辅助功能。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section" id="faq">
+        <div class="section-head">
+          <h2>常见问答</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>黑料网主要收录哪些类型的争议事件？</summary>
+            <div class="faq-answer">页面内容以网络公共讨论中出现的争议事件为主，常见方向包括品牌争议、平台规则调整、消费维权、职场讨论、内容生态与署名争议等。每类事件以时间线梳理和观点对照为主要呈现方式，不针对个人进行评价。</div>
+          </details>
+          <details class="faq-item">
+            <summary>争议事件的时间线一般多久更新一次？</summary>
+            <div class="faq-answer">热议事件的时间线按进展滚动更新，通常在有新回应、新证据或第三方介入时补充节点。日常汇总每日一次，深度解析类内容每周二、周五更新。具体节奏视事件活跃度而定。</div>
+          </details>
+          <details class="faq-item">
+            <summary>普通人看网络争议事件应该先关注什么？</summary>
+            <div class="faq-answer">建议先看原始信息和时间线，再对照各方说法。很多争议的焦点并不在事实本身，而在于规则适用或价值判断。把“发生了什么”和“该怎么看”分开，能避免被单一立场的表述带偏。</div>
+          </details>
+          <details class="faq-item">
+            <summary>消费维权类争议有哪些常见处理路径？</summary>
+            <div class="faq-answer">常见路径包括：先与商家或平台客服沟通并保留记录，再通过平台投诉通道提交证据，必要时向消费者权益保护组织或相关管理部门反映。不同路径的时效和所需材料不同，争议金额、证据完整度会影响处理方式的选择。</div>
+          </details>
+          <details class="faq-item">
+            <summary>平台规则类争议为什么容易引发讨论？</summary>
+            <div class="faq-answer">规则类争议往往涉及多方利益：平台需要可执行的边界，创作者关注表达空间，用户关注体验。规则文本的模糊地带、执行尺度是否一致、申诉渠道是否顺畅，都是讨论高发点。阅读时把规则原文与执行案例对照，会比只看观点更有帮助。</div>
+          </details>
+          <details class="faq-item">
+            <summary>如何判断一条争议信息是否值得继续关注？</summary>
+            <div class="faq-answer">可以看三个信号：是否有可核对的原始出处、是否有新的信息增量进入、讨论是否从情绪表达转向事实补充。如果长时间只有重复观点而没有新信息，热度可能已经与事件进展脱节，不必持续投入注意力。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="comments">
+        <div class="section-head">
+          <h2>读者评论</h2>
+        </div>
+        <div class="comment-list">
+          <div class="comment-item"><div class="comment-head"><span class="avatar">林</span><span class="comment-name">林间有风</span></div><div class="comment-text">时间线整理得比较清楚，比只看零散截图好理解多了。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v2">陈</span><span class="comment-name">陈默观察</span></div><div class="comment-text">观点对照那一块有用，能看出双方根本不在争同一件事。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v3">周</span><span class="comment-name">周末读报</span></div><div class="comment-text">消费维权部分建议再细一点，不同平台的处理时效差别挺大的。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v4">吴</span><span class="comment-name">吴所谓</span></div><div class="comment-text">深度解析讲方法而不是直接下结论，这个思路可以。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v5">许</span><span class="comment-name">许小满</span></div><div class="comment-text">希望多更新一些职场讨论类的事件，这类信息比较分散。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">郑</span><span class="comment-name">郑在输入</span></div><div class="comment-text">有些事件热度高但信息确实不全，页面有标注待核实，这点挺好。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v2">沈</span><span class="comment-name">沈知微</span></div><div class="comment-text">搜索功能试了一下，输入“平台规则”能筛出相关卡片。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v3">韩</span><span class="comment-name">韩少卿</span></div><div class="comment-text">整体信息密度适中，没有那种为了凑篇幅的重复段落。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v4">顾</span><span class="comment-name">顾屿</span></div><div class="comment-text">中立说一句，评论区有时候比正文还情绪化，看的时候要自己过滤。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v5">叶</span><span class="comment-name">叶知秋</span></div><div class="comment-text">希望时间线能加一个“最后核实时间”的标记，方便判断新旧。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">白</span><span class="comment-name">白露未晞</span></div><div class="comment-text">深度解析里“信息增量”和“情绪增量”的区分很实用。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v2">秦</span><span class="comment-name">秦时雨</span></div><div class="comment-text">内容生态类的话题最近确实多，希望分类可以再细一些。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v3">石</span><span class="comment-name">石间语</span></div><div class="comment-text">页面在手机上读起来挺顺的，没有横向滚动条。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar v4">孟</span><span class="comment-name">孟迟</span></div><div class="comment-text">建议增加“相似事件”的关联，有时候一个问题会在不同领域反复出现。</div></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news">
+        <div class="section-head">
+          <h2>舆情资讯速览</h2>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">2025-03-18</span>
+            <div class="news-content">
+              <div class="n-title">平台规则调整后的首轮申诉结果公示</div>
+              <div class="n-sum">多家内容平台公布规则调整后的申诉处理数据，申诉成功率与材料完整度的关系受到关注。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-15</span>
+            <div class="news-content">
+              <div class="n-title">消费维权通道时效对比引发讨论</div>
+              <div class="n-sum">不同平台的投诉处理时效差异被集中讨论，部分平台公布分区域处理排期以缓解等待焦虑。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-12</span>
+            <div class="news-content">
+              <div class="n-title">内容署名规范讨论稿进入意见征集阶段</div>
+              <div class="n-sum">行业组织就二次创作署名问题发布讨论稿，创作者社群围绕适用范围与执行方式提出建议。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-08</span>
+            <div class="news-content">
+              <div class="n-title">职场争议证据类型梳理引发读者共鸣</div>
+              <div class="n-sum">关于沟通记录与考勤证据在争议处理中的作用，实用型梳理内容的阅读量明显上升。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-05</span>
+            <div class="news-content">
+              <div class="n-title">测评内容合作披露方式成为新讨论点</div>
+              <div class="n-sum">围绕测评机构与品牌方的合作关系披露，多位创作者公开了合作声明模板与标注习惯。</div>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-01</span>
+            <div class="news-content">
+              <div class="n-title">社区讨论规范更新，明确争议话题举证流程</div>
+              <div class="n-sum">新版规范对争议话题的举证材料类型与申诉步骤作出细化说明，强调处理过程的可追溯性。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section" id="recommend">
+        <div class="section-head">
+          <h2>延伸阅读方向</h2>
+        </div>
+        <ul class="rec-list">
+          <li><span class="rec-idx">01</span><span class="rec-text"><b>品牌争议中的第三方检测</b>：检测报告在争议梳理中的作用与局限</span></li>
+          <li><span class="rec-idx">02</span><span class="rec-text"><b>平台规则文本的常见模糊地带</b>：哪些表述容易引发执行分歧</span></li>
+          <li><span class="rec-idx">03</span><span class="rec-text"><b>消费维权证据清单</b>：沟通记录、订单信息与售后凭证的整理方式</span></li>
+          <li><span class="rec-idx">04</span><span class="rec-text"><b>职场争议中的时间线还原</b>：如何从零散记录中梳理事件顺序</span></li>
+          <li><span class="rec-idx">05</span><span class="rec-text"><b>内容署名与二次创作边界</b>：行业惯例与平台规则的交叉点</span></li>
+          <li><span class="rec-idx">06</span><span class="rec-text"><b>公共事件中的信息增量识别</b>：区分新事实与情绪表达的方法</span></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- 右栏 -->
+    <aside class="col-right" aria-label="辅助阅读">
+      <div class="side-block">
+        <div class="side-title">本页目录</div>
+        <ul class="toc-list">
+          <li><a href="/#intro">内容定位</a></li>
+          <li><a href="/#hot-picks">热议事件推荐</a></li>
+          <li><a href="/#latest">最新动态追踪</a></li>
+          <li><a href="/#categories">分类索引</a></li>
+          <li><a href="/#deep-dive">深度解析</a></li>
+          <li><a href="/#guide">查阅指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">舆情资讯</a></li>
+          <li><a href="/#recommend">延伸阅读</a></li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门条目</div>
+        <ul class="hot-mini-list">
+          <li><span class="rank top">1</span><a href="/#hot-picks">饮品配料表争议时间线</a></li>
+          <li><span class="rank top">2</span><a href="/#hot-picks">短视频搬运规则调整</a></li>
+          <li><span class="rank top">3</span><a href="/#hot-picks">创作者署名争议背景</a></li>
+          <li><span class="rank">4</span><a href="/#hot-picks">职场加班证据链梳理</a></li>
+          <li><span class="rank">5</span><a href="/#hot-picks">团购退款纠纷处理路径</a></li>
+          <li><span class="rank">6</span><a href="/#hot-picks">门店服务舆情演变模式</a></li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <div class="side-title">阅读提示</div>
+        <p style="font-size:12.5px;color:var(--ink-faint);line-height:1.72;">争议事件的信息往往在持续变化。阅读时建议关注时间线中的“待核实”标注，并对照多方说法，避免以单一片段作为完整判断依据。</p>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="f-logo">
+            <span class="f-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 7h14M5 12h9M5 17h14" stroke="#1c1f2b" stroke-width="2.2" stroke-linecap="round"/>
+                <circle cx="19" cy="12" r="2.4" fill="#1c1f2b"/>
+              </svg>
+            </span>
+            <span class="f-name">黑料网</span>
+          </div>
+          <p class="f-desc">聚焦网络争议事件与舆情观察，提供时间线梳理、观点对照与背景补充，帮助读者在信息密集的讨论中理清脉络。</p>
+        </div>
+        <div class="footer-col">
+          <h4>内容频道</h4>
+          <a href="/#hot-picks">热议事件榜</a>
+          <a href="/#latest">最新动态</a>
+          <a href="/#deep-dive">深度解析</a>
+          <a href="/#news">舆情资讯</a>
+        </div>
+        <div class="footer-col">
+          <h4>查阅入口</h4>
+          <a href="/#categories">分类索引</a>
+          <a href="/#guide">查阅指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#recommend">延伸阅读</a>
+        </div>
+        <div class="footer-col">
+          <h4>参与讨论</h4>
+          <a href="/#comments">读者评论</a>
+          <a href="/#hot-picks">观点对照</a>
+          <a href="/#top">返回顶部</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 黑料网 · 舆情观察与争议事件梳理示例页</span>
+        <span class="note">部分内容为示例数据，仅用于展示页面结构</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('searchForm');
+      var input = document.getElementById('searchInput');
+      var grid = document.getElementById('hotCardGrid');
+      var noResult = document.getElementById('noResult');
+      if (!form || !input || !grid || !noResult) return;
+
+      function filterCards(keyword) {
+        var kw = keyword.trim().toLowerCase();
+        var cards = grid.querySelectorAll('.content-card');
+        var visible = 0;
+        cards.forEach(function (card) {
+          var text = card.textContent.toLowerCase();
+          var match = !kw || text.indexOf(kw) !== -1;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        noResult.style.display = visible === 0 ? 'block' : 'none';
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        filterCards(input.value);
+      });
+
+      input.addEventListener('input', function () {
+        filterCards(input.value);
+      });
+
+      input.addEventListener('search', function () {
+        if (input.value === '') filterCards('');
+      });
+    })();
+  </script>
+
+</body>
+  </html>
